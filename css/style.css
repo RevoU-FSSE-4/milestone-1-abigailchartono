@@ -3,15 +3,20 @@
     padding: 0;
     font-family: "Noto Sans", serif;
     box-sizing: border-box;
+    
+}
+
+h2 {
+    font-size: 2em;
+}
+
+p {
+    font-size: 1em;
 }
 
 body {
     background-color: white;
     transition: all 1s ease;
-}
-
-.site-logo {
-    height: 4em;
 }
 
 .dark-mode{
@@ -29,6 +34,12 @@ body {
     transition: all 1s ease;
 }
 
+.section-title{
+    margin-left: 10%;
+    padding-bottom: 2em;
+    padding-top: 2em;
+}
+
 /* Navigation Bar */
 
 nav {
@@ -43,6 +54,7 @@ nav {
     padding-left: 1.5em;
     padding-right: 1.5em;
     transition: all 1s ease;
+    z-index: 1000;
 }
 
 .nav-container {
@@ -81,6 +93,33 @@ nav {
     align-items: center;
 }
 
+.site-logo {
+    height: 3em;
+    width: 3em;
+    transition: all 1s ease;
+    animation: tilt;
+    animation-delay: 1s;
+    animation-duration: 4s;
+}
+
+@keyframes tilt{
+    from {
+        transform: rotate(0turn);
+    }
+    50% {
+        transform: rotate(0.1turn);
+    }
+    to {
+        transform: rotate(0turn);
+    }
+}
+
+
+.site-logo:hover {
+    transform: rotate(0.1turn);
+}
+
+
 .nav-title {
     font-size: 2em;
 }
@@ -89,6 +128,7 @@ nav {
     display: flex;
     justify-content: space-between;
     gap: 3vw;
+    z-index: 999;
 }
 
 .navitem {
@@ -140,7 +180,7 @@ nav {
     .navigation {
         position: fixed;
         left: -100%;
-        top: 110px;
+        top: 100px;
         gap: 0;
         flex-direction: column;
         background-color: white;
@@ -158,7 +198,7 @@ nav {
         left: 0;
     }
 
-    .dark-mode ,.navigation{
+    .dark-mode .navigation{
         background-color: black;
         transition: all 1s ease;
     }
@@ -207,11 +247,13 @@ nav {
     z-index: -2;
 }
 
+
+/* about page */
+
 .about {
     display: flex;
     flex-direction: column;
     gap: 1em;
-    background-color: ;
     padding-top: ;
     margin-inline: 1.5em;
 }
@@ -226,11 +268,86 @@ nav {
     width: 80%;
 }
 
-h2 {
-    font-size: 2em;
+/* gallery page */
+
+.gallery {
+    padding-bottom: 4em;
 }
 
-p {
-    font-size: 1em;
+.grid-container {
+    display: grid;
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 350px 350px 350px;
+    gap: 0.25em;
 }
 
+.grid-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 800;
+    text-decoration: none;
+    color: transparent;
+    transition: all 1s ease-in-out;
+    filter: grayscale(100%);
+}
+
+.grid-item:hover {
+    text-decoration: none;
+    color: white;
+    font-size: 1.75em;
+    filter: none;
+    text-shadow: 5px 5px 5px black;
+
+}
+
+.grid-container #item1 {
+    grid-row: 1;
+    grid-column: 1 / 3;
+    background-image: url(/assets/newyork.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.grid-container #item2 {
+    grid-row: 1;
+    grid-column: 3;
+    background-image: url(https://media.istockphoto.com/id/1390815938/id/foto/kota-tokyo-di-jepang.jpg?s=612x612&w=0&k=20&c=a5nwnVUU62XkrX0o8B_0W7_JBdYzcKIONtC6vkCE9xI=);
+    background-position: center;
+    background-size: cover;
+}
+
+.grid-container #item3 {
+    grid-row: 2;
+    grid-column: 1;
+    background-image: url(https://images.pexels.com/photos/3879071/pexels-photo-3879071.jpeg?cs=srgb&dl=pexels-alex-azabache-3879071.jpg&fm=jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.grid-container #item4 {
+    grid-row: 2;
+    grid-column: 2 / 4;
+    background-image: url(https://i.pinimg.com/originals/ec/6c/44/ec6c44dddc98ad1bc6b199c1c6331720.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.grid-container #item5 {
+    grid-row: 3;
+    grid-column: 1 / 3;
+    background-image: url(https://www.frommers.com/system/media_items/attachments/000/863/732/s980/Innsbruck.jpg?1547824680);
+    background-position: center;
+    background-size: cover;
+}
+
+.grid-container #item6 {
+    grid-row: 3;
+    grid-column: 3;
+    background-image: url(https://cdn.britannica.com/30/180130-138-4FC01CDD/Overview-Amsterdam.jpg?w=800&h=450&c=crop);
+    background-position: center;
+    background-size: cover;
+}

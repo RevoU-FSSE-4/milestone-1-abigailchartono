@@ -3,8 +3,8 @@
     padding: 0;
     font-family: "Noto Sans", serif;
     box-sizing: border-box;
-    
 }
+
 
 h2 {
     font-size: 2em;
@@ -32,6 +32,10 @@ body {
 .dark-mode nav {
     background-color: black;
     transition: all 1s ease;
+}
+
+.dark-mode button:hover {
+    color: black;
 }
 
 .section-title{
@@ -202,8 +206,56 @@ nav {
         background-color: black;
         transition: all 1s ease;
     }
+
+    .grid-container {
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        margin-left: 10%;
+    }
+
+    .grid-item {
+        height: 250px;
+    }
+
+    .card-container {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
 }
 
+/* logo scroll */
+
+.countries {
+    overflow: hidden;
+    padding: 3em 0;
+    white-space: nowrap;
+}
+
+.countries:hover .flags-slide {
+    animation-play-state: paused;
+}
+
+.flags-slide {
+    display: inline-block;
+    animation: 20s slide infinite linear;
+}
+
+.flags-slide > img {
+    height: 5em;
+    margin: 0 3em;
+}
+
+@keyframes slide {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-100%);
+    }
+}
 
 /* Hero page */
 
@@ -237,7 +289,7 @@ nav {
 }
 
 .hero-button:hover {
-    color: black;
+    color: #2FD9B9;
     background-color: white;
 }
 
@@ -274,14 +326,21 @@ nav {
     padding-bottom: 4em;
 }
 
-.grid-container {
-    display: grid;
-    width: 80%;
-    margin-left: 10%;
-    margin-right: 10%;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 350px 350px 350px;
-    gap: 0.25em;
+@media only screen and (min-width:769px) {
+    .grid-container {
+        display: grid;
+        width: 80%;
+        margin-left: 10%;
+        margin-right: 10%;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 350px 350px 350px;
+        gap: 0.25em;
+    }
+
+    .card {
+        flex-basis: 50%;
+        flex-shrink: 0;
+    }
 }
 
 .grid-item {
@@ -306,7 +365,7 @@ nav {
 
 .grid-container #item1 {
     grid-row: 1;
-    grid-column: 1 / 3;
+    grid-column: 1 / 2 span;
     background-image: url(/assets/newyork.jpg);
     background-position: center;
     background-size: cover;
@@ -314,7 +373,7 @@ nav {
 
 .grid-container #item2 {
     grid-row: 1;
-    grid-column: 3;
+    grid-column: 2 span;
     background-image: url(https://media.istockphoto.com/id/1390815938/id/foto/kota-tokyo-di-jepang.jpg?s=612x612&w=0&k=20&c=a5nwnVUU62XkrX0o8B_0W7_JBdYzcKIONtC6vkCE9xI=);
     background-position: center;
     background-size: cover;
@@ -330,7 +389,7 @@ nav {
 
 .grid-container #item4 {
     grid-row: 2;
-    grid-column: 2 / 4;
+    grid-column: 2 span;
     background-image: url(https://i.pinimg.com/originals/ec/6c/44/ec6c44dddc98ad1bc6b199c1c6331720.jpg);
     background-position: center;
     background-size: cover;
@@ -338,7 +397,7 @@ nav {
 
 .grid-container #item5 {
     grid-row: 3;
-    grid-column: 1 / 3;
+    grid-column: 1 / 2 span;
     background-image: url(https://www.frommers.com/system/media_items/attachments/000/863/732/s980/Innsbruck.jpg?1547824680);
     background-position: center;
     background-size: cover;
@@ -346,8 +405,74 @@ nav {
 
 .grid-container #item6 {
     grid-row: 3;
-    grid-column: 3;
+    grid-column: 2 span;
     background-image: url(https://cdn.britannica.com/30/180130-138-4FC01CDD/Overview-Amsterdam.jpg?w=800&h=450&c=crop);
     background-position: center;
     background-size: cover;
+}
+
+/* Tours */
+
+.tours {
+    padding-bottom: 4em;
+}
+
+.card-container {
+    display: flex;
+    overflow-x: auto;
+    width: 80%;
+    margin-left: 10%;
+    gap: 2em;
+}
+
+.card {
+
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    padding: 2em;
+    border-radius: 1em;
+    gap: 0.5em;
+    border: 2px solid #2FD9B9;
+    justify-content: space-evenly;
+}
+
+.card-img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 1em;
+}
+
+.card-title {
+    font-size: 1.5em;
+    font-weight: 600;
+}
+
+.price {
+    font-size: 1.2em;
+    font-weight: 400;
+    text-align: ;
+}
+
+.description {
+    font-weight: 400;
+    color: grey;
+}
+
+.card-button {
+    padding: 1em;
+    background-color: transparent;
+    width: 100%;
+    height: 4em;
+    border-radius: 1em;
+    border: 1px solid #2FD9B9;
+    cursor: pointer;
+    color: #2FD9B9;
+    font-weight: 600;
+}
+
+.card-button:hover {
+    background-color: #2FD9B9;
+    color: white;
 }

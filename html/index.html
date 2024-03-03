@@ -17,26 +17,26 @@
     <nav>
         <div class="logo-title">
                 <a href="#">
-                    <img class="site-logo" src="/assets/suitcase-travel-vacation-svgrepo-com.svg" alt="">
+                    <img class="site-logo" src="/assets/suitcase-travel-vacation-svgrepo-com.svg" alt="Go back to home" aria-label="home">
                 </a>
             <h1 class="nav-title">PassePort</h1>
         </div>
 
             <ul class="navigation">
                 <li class="navitem">
-                    <a href="#" class="nav-link">Home</a>
+                    <a href="#home" class="nav-link">Home</a>
                 </li>
                 <li class="navitem">
-                    <a href="#" class="nav-link">About</a>
+                    <a href="#about" class="nav-link">About</a>
                 </li>
                 <li class="navitem">
-                    <a href="#" class="nav-link">Gallery</a>
+                    <a href="#gallery" class="nav-link">Gallery</a>
                 </li>
                 <li class="navitem">
-                    <a href="#" class="nav-link">Tours</a>
+                    <a href="#tours" class="nav-link">Tours</a>
                 </li>
                 <li class="navitem">
-                    <a href="#" class="nav-link">Contact</a>
+                    <a href="#contact" class="nav-link">Contact</a>
                 </li>
             </ul>
             <div class="hamburger">
@@ -53,7 +53,7 @@
     <script src="/script/script.js"></script>
 
     <main>
-        <section class="hero">
+        <section class="hero" id="home">
             <video class="video-back" src="/assets/paris.mp4" autoplay muted loop></video>
             <div class="hero-content">
                 <h1>PassePort</h1>
@@ -92,7 +92,7 @@
         </div>
         </section>
 
-        <section class="about">
+        <section class="about" id="about">
             <div class="section-title">
                 <h2>About Us</h2>
             </div>
@@ -103,7 +103,7 @@
             </div>
         </section>
 
-        <section class="gallery">
+        <section class="gallery" id="gallery">
             <div class="section-title">
                 <h2>Gallery</h2>
             </div>
@@ -117,7 +117,7 @@
             </div>
         </section>
 
-        <section class="tours">
+        <section class="tours" id="tours">
             <div class="section-title">
                 <h2>Tours</h2>
             </div>
@@ -126,38 +126,70 @@
                     <img class="card-img" src="https://cdn.pixabay.com/photo/2020/09/18/21/12/buildings-5582974_640.jpg" alt="">
                     <p class="card-title">Amsterdam</p>
                     <p class="price">$499</p>
-                    <p class="description">Amsterdam captivates with its picturesque canals, historic charm, and dynamic cultural scene, creating an unforgettable experience for visitors.</p>
+                    <article class="description">Amsterdam captivates with its picturesque canals, historic charm, and dynamic cultural scene, creating an unforgettable experience for visitors.</article>
                     <button class="card-button">Enquire Now!</button>
                 </div>
                 <div class="card">
                     <img class="card-img" src="https://images.unsplash.com/photo-1503899036084-c55cdd92da26?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8dG9reW98ZW58MHx8MHx8fDA%3D" alt="">
                     <p class="card-title">Tokyo</p>
                     <p class="price">$399</p>
-                    <p class="description">
-                        Tokyo, Japan's vibrant capital, seamlessly blends traditional culture with modern innovation, captivating visitors with its dynamic cityscape, bustling streets, and rich history.</p>
+                    <article class="description">
+                        Tokyo, Japan's vibrant capital, seamlessly blends traditional culture with modern innovation, captivating visitors with its dynamic cityscape, bustling streets, and rich history.</article>
                     <button class="card-button">Enquire Now!</button>
                 </div>
                 <div class="card">
                     <img class="card-img" src="https://static.independent.co.uk/2023/06/02/12/iStock-1157937978.jpg" alt="">
                     <p class="card-title">Bali</p>
                     <p class="price">$599</p>
-                    <p class="description">Bali, Indonesia's serene paradise, seamlessly weaves together tranquil landscapes with vibrant cultural experiences, captivating visitors with its lush scenery, bustling markets, and spiritual heritage.</p>
+                    <article class="description">Bali, Indonesia's serene paradise, seamlessly weaves together tranquil landscapes with vibrant cultural experiences, captivating visitors with its lush scenery, bustling markets, and spiritual heritage.</article>
                     <button class="card-button">Enquire Now!</button>
                 </div>
                 <div class="card">
                     <img class="card-img" src="https://www.travelandleisure.com/thmb/91pb8LbDAUwUN_11wATYjx5oF8Q=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/new-york-city-evening-NYCTG0221-52492d6ccab44f328a1c89f41ac02aea.jpg" alt="">
                     <p class="card-title">New York</p>
                     <p class="price">$899</p>
-                    <p class="description">New York City, the iconic hub of diversity and ambition, pulsates with a dynamic energy that seamlessly merges towering skyscrapers, bustling streets, and a rich tapestry of cultures, offering visitors an exhilarating blend of urban sophistication and boundless opportunity.</p>
+                    <article class="description">New York City, the iconic hub of diversity and ambition, pulsates with a dynamic energy that seamlessly merges towering skyscrapers, bustling streets, and a rich tapestry of cultures, offering visitors an exhilarating blend of urban sophistication and boundless opportunity.</article>
                     <button class="card-button">Enquire Now!</button>
                 </div>
             </div>
+        </section>
 
+        <section class="contact" id="contact">
+            <div class="section-title">
+                <h2>Contact Us</h2>
+            </div>
+            <div class="form-container">
+                <h3>Get in touch</h3>
+                <p>Drop us a message if you are interested to book your next awesome trip!</p>
+                <form action="">
+                    <div class="field">
+                        <label for="fname" id="field1">First Name</label>
+                        <input type="text" id="fname" placeholder="Your first name here">
+                    </div>
+                    <form action="">
+                        <div class="field" id="field2">
+                            <label for="lname">Last Name</label>
+                            <input type="text" id="lname" placeholder="Your last name here">
+                        </div>
+                        <div class="field" id="field3">
+                            <label for="email">Email Address</label>
+                            <input type="text" id="email" placeholder="Your email here">
+                        </div>
+                        <div class="field" id="field4">
+                            <label for="mobile">Mobile</label>
+                            <input type="text" id="mobile" placeholder="Your name here">
+                        </div>
+                        <div class="field" id="field5">
+                            <label for="name">Your Message</label>
+                            <textarea name="message" id="message" cols="30" rows="10" placeholder="Enter your message here"></textarea>
+                        </div>
+                </form>
+            </div>
         </section>
     </main>
 
     <footer>
-
+        <p>© 2024 PassePort by Abigail Cherdy Hartono. All Rights Reserved.</p>
     </footer>
 </body>
 

@@ -172,6 +172,8 @@ nav {
     background-color: black;
 }
 
+/* responsive tablet */
+
 @media only screen and (max-width:768px) {
     .hamburger {
         display: block;
@@ -237,8 +239,63 @@ nav {
         flex-direction: column;
         gap: 1em;
     }
-
 }
+
+/* responsive mobile */
+
+@media only screen and (max-width: 425px) {
+    .site-logo {
+        height: 2.5em;
+        width: 2.5em;
+    }
+
+    .nav-title{
+        font-size: 1.5em;
+    }
+
+    .navigation {
+        font-size: 0.75em;
+    }
+
+    .darkmode-btn{
+        padding: 0.25em;
+        
+    }
+
+    h1 {
+        font-size: 1em;
+    }
+    
+    .hero-button {
+        padding: ;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+
+    p {
+        font-size: 0.75em;
+    }
+
+    .card-img {
+        height: 100px;
+    }
+
+    .card-title {
+        font-size: 1em;
+    }
+
+    .description{
+        font-weight: 200;
+    }
+
+    nav {
+        padding-left: 0.5em;
+        padding-right: 0.5em;
+    }
+}
+
 
 /* logo scroll */
 
@@ -271,6 +328,7 @@ nav {
         transform: translateX(-100%);
     }
 }
+
 
 /* Hero page */
 
@@ -461,24 +519,21 @@ nav {
 
 .card-img {
     width: 100%;
-    height: 300px;
+    max-height: 350px;
+    min-height: 150px;
     object-fit: cover;
     border-radius: 1em;
 }
 
 .card-title {
-    font-size: 1.5em;
     font-weight: 600;
 }
 
 .price {
-    font-size: 1.2em;
     font-weight: 400;
-    text-align: ;
 }
 
 .description {
-    font-weight: 400;
     color: grey;
 }
 

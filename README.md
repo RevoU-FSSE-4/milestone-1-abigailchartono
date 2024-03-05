@@ -143,3 +143,56 @@ HTML onclick tag to trigger script to activate dark-mode:
 ![dark mode html](/readme-images/darkmode-html.png)
 
 ## Day 3 - Deployment
+
+### Sign Up on Netlify
+
+1. Go to https://www.netlify.com/
+2. Click on SignUp
+    ![Netlify SignUp](/readme-images/netlify-signup.png)
+3. Select SignUp using GitHub
+    ![SignUp with Github](/readme-images/signup-github.png)
+4. Enter your GitHub Credentials
+    ![GitHub Creds](/readme-images/github-credentials.png)
+5. Congratulations! You've successfully logged in to Netlify!
+
+
+### Deployment on Netlify
+
+1. On your homepage on Netlify, go on to **Sites**
+    ![Netlify Home](/readme-images/netlify-home.png)
+2. Click on **New Site** and select _import from existing project_
+    ![GitHub Deployment](/readme-images/netlify-newsite.png)
+3. Select _deploy with GitHub_ as your deployment option
+    ![deployment option](/readme-images/deploy-options.png)
+4. Select the correct Repository on your GitHub account. Be sure that you are in the correct organisation.
+    ![GitHub Creds](/readme-images/select-repo.png)
+5. Fill in your deployment details, make sure you select the right branch, If you leave the Site Name as empty, Netlify will assign a random unused domain name for your site. Once done, click on **Deploy**
+    ![Deployment Details](/readme-images/site-details.png)
+6. Once you've deployed your site, Netlify will take some time to deploy your site. At this point, all you need to do is wait.
+    ![Deployment Progress](/readme-images/deploy-progress.png)
+7. Your Deployment is completed once you can see your domain url under your site name.
+    ![Deployment Successful](/readme-images/deployed.png)
+8. Congratulations! You just successfully deployed your site directly from GitHub!
+
+
+### Initializing your Custom Domain on Netlify
+
+1. Go to your Netlify Account, then login.
+
+2. Go to _Site_ then select the website that you want to set up the custom domain for. 
+    ![Select your site](/readme-images/netlifyhome.png)
+3. Click on _Domain Management_.
+    ![Domain Management](/readme-images/domain-management.png)
+4. Click on _Add a Domain_.
+    ![Add a domain](/readme-images/add-domain.png)
+5. Enter the domain name that you have owned, then click on _Verify_, then _Add Domain_
+    ![Enter domain](/readme-images/enter-domain.png)
+6. You will be redirected to your _Production Domain_ page, then next to your domain name, click on _Options_ then select _Go to DNS Panel_
+    ![DNS Panel](/readme-images/dns-panel.png)
+7. Scroll down to your Name Servers, then copy all of the listed name servers and save them to clipboard, or any text editor. (This step is taken just to keep these nameservers).
+    ![Nameservers](/readme-images/name-servers.png)
+8. Go to your **Domain Registrar**, login and go to your Custom Domain's domain management, then go to the DNS/Nameserver page. 
+    ![Manage Domain](/readme-images/manage-domain.png)
+9. Click on Change Nameservers, then paste all the copied nameservers into the 4 available fields.
+    ![Change nameservers](/readme-images/change-nameservers.png)
+10. It will take 24 hours for your nameservers changes to propegate. After 24 hours, check again and your custom domain should now be connected to your

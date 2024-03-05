@@ -46,6 +46,10 @@ body {
     color: white;
 }
 
+.dark-mode .main-section #eight > div > a:hover {
+    color: black;
+}
+
 .section-title{
     margin-left: 10%;
     padding-bottom: 2em;
@@ -194,7 +198,7 @@ nav {
     .navigation {
         position: fixed;
         left: -100%;
-        top: 100px;
+        top: 90px;
         gap: 0;
         flex-direction: column;
         background-color: white;
@@ -266,9 +270,7 @@ nav {
         font-size: 1em;
     }
     
-    .hero-button {
-        padding: ;
-    }
+
 
     h2 {
         font-size: 1.5em;
@@ -538,6 +540,7 @@ nav {
 }
 
 .card-button {
+    display: flex;
     padding: 1em;
     background-color: transparent;
     width: 100%;
@@ -547,6 +550,10 @@ nav {
     cursor: pointer;
     color: #2FD9B9;
     font-weight: 600;
+    font-size: 1em;
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
     font-size: 1em;
 }
 
@@ -621,4 +628,179 @@ footer {
     padding-bottom: 2em;
     background-color: #2FD9B9;
     color: white;
+}
+
+/* individual travel pages */
+
+@media only screen and (min-width: 768px) {
+    .main-section {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 400px 400px 400px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .main-section {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.main-section > div {
+    height: 400px;
+    padding: 1em;
+}
+
+.main-section > #one {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.5em;
+}
+
+.grid-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+    color: white;
+    text-shadow: 5px 5px 5px black;
+}
+
+.main-section #eight {
+    grid-column: 2 / 4;
+    display: flex;
+    flex-direction: column;
+    padding-inline: 2em;
+    padding-top: 6em;
+    gap: 2em;
+}
+
+.grid-block {
+    background-size: cover;
+    background-position: center;
+}
+
+.main-section #two-ams {
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/South_facade_of_the_Rijksmuseum_Amsterdam_%28DSCF0528%29.jpg/1200px-South_facade_of_the_Rijksmuseum_Amsterdam_%28DSCF0528%29.jpg);
+}
+
+.main-section #three-ams {
+    background-image: url(https://www.sncf-connect.com/assets/media/2022-05/tulipes-amsterdam.jpg);
+}
+
+.main-section #four-ams {
+    background-image: url(https://gringajourneys.com/wp-content/uploads/2023/08/best-foods-in-amsterdam-to-try.jpg);
+}
+
+.main-section #five-ams {
+    background-image: url(https://www.cathaypacific.com/content/dam/focal-point/cx/inspiration/2023/06/5-ways-to-explore-Amsterdam-by-bike-cycling-route-holland-netherland-Gettyimages-HERO.jpg);
+}
+
+.main-section #six-ams {
+    background-image: url(https://a.cdn-hotels.com/gdcs/production198/d1107/2fc491e5-bf01-474b-9a0e-048eef1af0c8.jpg);
+}
+
+.main-section #seven-ams {
+    background-image: url(https://www.thetrainline.com/cms/media/9166/netherlands-amsterdam-beer.jpg);
+}
+
+.main-section #eight > div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-section #eight > div > p {
+    font-size: 1.2em;
+}
+
+
+.main-section #eight > div > a {
+    border: 1px solid #2FD9B9;
+    border-radius: 1em;
+    padding: 1em;
+    text-decoration: none;
+    color: #2FD9B9;
+    text-align: center;
+    font-size: 0.75em;
+}
+
+.main-section #eight > div > a:hover {
+    background-color: #2FD9B9;
+    color: white;
+    transition: all 1s;
+}
+
+.main-section #two-tky {
+    background-image: url(https://www.planetware.com/photos-large/JPN/japan-mt-fuji-and-cherry-blossoms.jpg);
+}
+
+.main-section #three-tky {
+    background-image: url(https://goingawesomeplaces.com/wp-content/uploads/2018/04/Ultimate-Tokyo-Japan-Food-Guide-Featured.jpg);
+}
+
+.main-section #four-tky {
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Tokyo_Shibuya_Scramble_Crossing_2018-10-09.jpg/640px-Tokyo_Shibuya_Scramble_Crossing_2018-10-09.jpg);
+}
+
+.main-section #five-tky {
+    background-image: url(https://tdrexplorer.com/wp-content/uploads/2023/05/tokyo-disneyland-trip-planning-guide-2023.jpg);
+}
+
+.main-section #six-tky {
+    background-image: url(https://i0.wp.com/tokyotreatblog.wpcomstaging.com/wp-content/uploads/2022/12/tokyotreat_cosplay.png?resize=620%2C414&ssl=1);
+}
+
+.main-section #seven-tky {
+    background-image: url(https://d.newsweek.com/en/full/1506288/nightclub.jpg);
+}
+
+.main-section #two-bali {
+    background-image: url(https://finnsbeachclub.com/wp-content/uploads/2022/12/finns-beach-club-best-bali-sunset-venue-1024x683.jpg);
+}
+
+.main-section #three-bali {
+    background-image: url(https://thehoteljournal.com/wp-content/uploads/2020/04/best-hotel-swimming-pools-Hanging-Gardens-of-Bali-.jpg);
+}
+
+.main-section #four-bali {
+    background-image: url(https://i0.wp.com/worldadventuredivers.com/wp-content/uploads/2020/11/IMG_6359.jpg?fit=1100%2C760&ssl=1);
+}
+
+.main-section #five-bali {
+    background-image: url(https://www.theungasan.com/wp-content/uploads/2023/07/la-plancha.jpg);
+}
+
+.main-section #six-bali {
+    background-image: url(https://www.bulgarihotels.com/.imaging/bhr-wide-big-jpg/dam/BALI/WHAT-S-ON/IN-BALI/May20IMGCut.zip/6.jpg/jcr%3Acontent);
+}
+
+.main-section #seven-bali {
+    background-image: url(https://www.willflyforfood.net/wp-content/uploads/2022/10/balinese-food-nasi-campur-bali.jpg.webp);
+}
+
+.main-section #two-nyc {
+    background-image: url(https://assets.bwbx.io/images/users/iqjWHBFdfxIU/ijo0PI_opNGA/v0/-1x-1.jpg);
+}
+
+.main-section #three-nyc {
+    background-image: url(https://executivelimousine.org/wp-content/uploads/2017/05/Black_Friday_Shopping_NYC.jpg);
+}
+
+.main-section #four-nyc {
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/a/a6/New-York_-_Bryant_Park.jpg);
+}
+
+.main-section #five-nyc {
+    background-image: url(https://s3.r29static.com/bin/entry/1b9/x,80/1735244/image.jpg);
+}
+
+.main-section #six-nyc {
+    background-image: url(https://thenextcocktail.com/wp-content/uploads/2023/11/5-Must-try-New-York-NY-drinks-your-guide-to-the-best-cocktails-in-town-5.jpeg);
+}
+
+.main-section #seven-nyc {
+    background-image: url(https://share.america.gov/wp-content/uploads/2016/01/New-York-City-skyline-at-night-ThinkstockPhotos-178735930.jpg);
 }

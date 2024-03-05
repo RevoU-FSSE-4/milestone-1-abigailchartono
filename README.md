@@ -3,6 +3,8 @@
 ## Version History
 ### V1 - 4 March 2024 - Simple 1 page website with simple footer, hamburger button, and dark mode implementation.
 
+### V2 - 5 March 2024 - Added pages for each card destination on the Tours section. When "Find out more" is clicked, you will be lead to a different page for each card.
+
 ## A little description about PassePort
 
 PassePort is an online travel agency that provides the best experience for travellers all around the world. The goal is to be the best online travel agency across the globe. 

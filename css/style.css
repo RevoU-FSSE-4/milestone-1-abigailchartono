@@ -71,11 +71,11 @@ nav {
     padding-right: 1.5em;
     transition: all 1s ease;
     z-index: 1000;
+    background-color: #e3fcf8;
 }
 
 .nav-container {
     display: flex;
-
 }
 
 .darkmode-btn {
@@ -201,7 +201,7 @@ nav {
         top: 90px;
         gap: 0;
         flex-direction: column;
-        background-color: white;
+        background-color: #e3fcf8;
         width: 100%;
         text-align: center;
         transition: 0.3s;
@@ -691,7 +691,7 @@ footer {
 }
 
 .main-section #four-ams {
-    background-image: url(https://gringajourneys.com/wp-content/uploads/2023/08/best-foods-in-amsterdam-to-try.jpg);
+    background-image: url(https://i.pinimg.com/originals/78/5f/be/785fbe7846221a220a0869622f27da52.jpg);
 }
 
 .main-section #five-ams {

@@ -5,6 +5,8 @@
 
 ### V2 - 5 March 2024 - Added pages for each card destination on the Tours section. When "Find out more" is clicked, you will be lead to a different page for each card.
 
+### V3 re-arranging folder configuration for netlify deployment. Site is deployed on Netlify.
+
 ## A little description about PassePort
 
 PassePort is an online travel agency that provides the best experience for travellers all around the world. The goal is to be the best online travel agency across the globe. 
@@ -12,6 +14,7 @@ PassePort is an online travel agency that provides the best experience for trave
 ![PassePort Hero Page](/readme-images/passeport-homepage.png)
 
 **PassePort website: http://passeport.site/**
+**Alternative link: moonlit-selkie-4788f7.netlify.app**
 
 ## A little description about the website
 
@@ -24,6 +27,30 @@ PassePort is an online travel agency that provides the best experience for trave
 - Contact
 
 Each tour has their own specific page
+
+# How to Install
+
+### 1. Open up https://github.com/RevoU-FSSE-4/milestone-1-abigailchartono and click on _code_ then copy the HTTPS clone link
+![Copy url](/readme-images/copy-https.png)
+
+### 2. On your terminal, cd to your desired folder where you'd want the codes to land in
+You can use this command
+> cd [root/parent folder/child folder]
+
+![cd to your directory](/readme-images/cd.png)
+
+### 3. Run the git clone command on the desired folder
+
+You can use this command
+> git clone [copied url]
+
+![git clone repository](/readme-images/git-clone.png)
+
+### 4. On the folder of the cloned repository, you can open index.html on VS code or your code editor.
+
+### 5. On the top bar, type in ">" then select external preview to view the website
+
+![live preview on vscode](/readme-images/live-preview.png)
 
 
 # Development Stages

@@ -284,10 +284,6 @@ nav {
         font-size: 0.75em;
     }
 
-    .card-img {
-        height: 100px;
-    }
-
     .card-title {
         font-size: 1em;
     }
@@ -525,9 +521,9 @@ nav {
 
 .card-img {
     width: 100%;
-    max-height: 350px;
-    min-height: 150px;
+    height: 248px;
     object-fit: cover;
+    object-position: center;
     border-radius: 1em;
 }
 
